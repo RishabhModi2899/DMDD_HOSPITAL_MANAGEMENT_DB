@@ -27,14 +27,15 @@ BEGIN
             state_name varchar(3),
             DOB date,
             contact_no number(10),
-            email_id VARCHAR2(40) CHECK (email_id LIKE "%@%.%" AND email_id NOT LIKE "@%" AND email_id NOT LIKE "%@%@%"),
+            email_id VARCHAR2(40),
             SSN number(9) NOT NULL,
             CONSTRAINT restrict_ploc CHECK (state_name IN ("AK","AZ","AR","CA","CO","CT","DE","FL",
             "GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE",
             "NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT",
             "VA","WA","WV","WI","WY")),
             CONSTRAINT patient_id PRIMARY KEY(patient_id),
-            CONSTRAINT ssn_unique UNIQUE(SSN)
+            CONSTRAINT ssn_unique UNIQUE(SSN),
+            CONSTRAINT email_chk CHECK (email_id LIKE "%@%.%" AND email_id NOT LIKE "@%" AND email_id NOT LIKE "%@%@%")
             )
     ')]';
     
