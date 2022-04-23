@@ -51,7 +51,6 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOCTOR
             doc_city varchar2(20),
             doc_zip number(5) NOT NULL,
             doc_state_name varchar2(3),
-            SSN number(9) NOT NULL,
             CONSTRAINT doc_restrict_ploc CHECK (doc_state_name IN (''AK'',''AZ'',''AR'',''CA'',''CO'',''CT'',''DE'',''FL'',
             ''GA'',''HI'',''ID'',''IL'',''IN'',''IA'',''KS'',''KY'',''LA'',''ME'',''MD'',''MA'',''MI'',''MN'',''MS'',''MO'',''MT'',''NE'',
             ''NV'',''NH'',''NJ'',''NM'',''NY'',''NC'',''ND'',''OH'',''OK'',''OR'',''PA'',''RI'',''SC'',''SD'',''TN'',''TX'',''UT'',''VT'',
@@ -60,7 +59,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOCTOR
             )';
     DBMS_OUTPUT.PUT_LINE('DOCTOR TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Dolores'',''Abernathy'',501,''16 Notre Dame'',''apt 1'',''Boston'',02119,''MA'',385890405)';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Dolores'',''Abernathy'',501,''16 Notre Dame'',''apt 1'',''Boston'',02119,''MA'')';
     DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
 END IF;
 
@@ -118,6 +117,23 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL_DEPT
     
     EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,10)';
     DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'VACCINE';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('VACCINE TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE 
+            (	
+                vaccine_id number GENERATED AS IDENTITY (START WITH 001 INCREMENT BY 2) primary key,
+                vaccine_name varchar2(20),
+                inoculated_by_days number
+            )';
+    DBMS_OUTPUT.PUT_LINE('VACCINE TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE(vaccine_name,inoculated_by_days) values (''pfizer'',75)';
+    DBMS_OUTPUT.PUT_LINE('VACCINE DATA INSERTION COMPLETED');
 END IF;
 
 
