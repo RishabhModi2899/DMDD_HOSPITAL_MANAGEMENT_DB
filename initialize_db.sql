@@ -1,5 +1,3 @@
-select * from user_tables;
-
 SET SERVEROUTPUT ON;
 DECLARE
 nCount NUMBER;
@@ -393,44 +391,3 @@ COMMIT;
 END;
 
 /
-
-
-select * from user_tables;
-select * from patient;
-select * from doctor;
-select * from hospital;
-select * from departments;
-select * from hospital_dept;
-select * from doctor_hospital;
-select * from patient_history;
-select * from patient_document;
-select * from vaccine;
-select * from vaccine_records;
-select * from doc_availability;
-select * from appointments;
-select * from insurance_provider;
-select * from coverage;
-select * from insurance_plan;
-select * from billing;
-select * from INSURANCE_POLICY;
-select * from receipt;
-drop table patient cascade constraints;
-drop table doctor cascade constraints;
-drop table hospital cascade constraints;
-drop table departments cascade constraints;
-drop table hospital_dept cascade constraints;
-drop table doctor_hospital cascade constraints;
-drop table doc_availability cascade constraints;
-drop table appointments cascade constraints;
-drop table patient_history cascade constraints;
-drop table patient_document cascade constraints;
-drop table vaccine cascade constraints;
-drop table vaccine_records cascade constraints;
-drop table insurance_provider cascade constraints;
-drop table coverage cascade constraints;
-drop table insurance_plan cascade constraints;
-drop table billing cascade constraints;
-drop table INSURANCE_POLICY cascade constraints;
-drop table receipt cascade constraints;
-drop table patient_policy cascade constraints;
-drop table PREMIUM_PAYMENTS cascade constraints;
