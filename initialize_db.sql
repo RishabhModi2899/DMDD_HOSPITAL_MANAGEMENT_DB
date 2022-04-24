@@ -47,7 +47,7 @@ EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,addre
 EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Eder'',''Militao'',''22 washington street'',''apt-29'',''Roxbury'',02119,''MA'',to_date(''06.24.1992'',''mm/dd/yyyy''),9443442747,''edermilitao0335@gmail.com'',487561517)';
 EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Ferland'',''Mendy'',''44 park drive street'',''apt-3'',''boston'',98765,''MA'',to_date(''04.21.1992'',''mm/dd/yyyy''),9486612364,''mendy.f@realmadrid.com'',983210908)';
 EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Dani'',''Carvajal'','' 02 bay state place'',''apt-2014'',''boston'',02127,''MA'',to_date(''05.17.1998'',''mm/dd/yyyy''),9443913624,''danic2@gmail.com'',0990)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Tony'',''Kroos'',''13 heath street'',''apt-23'',''boston'',02120,''MA'',to_date(''06.14.1974'',''mm/dd/yyyy''),9443321323,''kroos_toni8@gmail.com'',7986)"';
+EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Tony'',''Kroos'',''13 heath street'',''apt-23'',''boston'',02120,''MA'',to_date(''06.14.1974'',''mm/dd/yyyy''),9443321323,''kroos_toni8@gmail.com'',7986)';
 DBMS_OUTPUT.PUT_LINE('PATIENT DATA INSERTION COMPLETED');
 END IF;
 
@@ -110,7 +110,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL
     
     -----------------hospital insertions--------------------------
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Apollo Hospital'', ''Smith St'',''Building 4'',''Boston'',02116,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Ruby Hospital'','' School St'',''4th lane'',''Boston'',02118,''Massachusetts'')';
+EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Ruby Hospital'','' School St'',''4th lane'',''Boston'',02118,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Beth Isarel'', ''aphonsus street'',''Building 12'',''Boston'',02121,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''MASS general Hospital'', ''32 Fruit St'',''12th lane'',''Boston'',02114,''MA'')';
                     DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
@@ -134,12 +134,12 @@ EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Hematology'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Opthalmology'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Nursing'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Pathology'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Diagnostic Imaging'')';
+EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Diagnostic Image'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''ortho'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Finance Department'')';
+EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Finance'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''multi speciality'')';
 EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Health & Safety'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''ENT Department'')';
+EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''ENT'')';
 DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
 END IF;
 
