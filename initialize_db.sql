@@ -85,7 +85,7 @@ EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,d
 EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Caleb'',''Nichols'',508,''23 Fisher'',''apt 8'',''Boston'',02126,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Lee'',''Sizemore'',509,''24 heath'',''apt 9'',''Boston'',02127,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''James'',''Delos'',510,''25 Cowing street'',''apt 10'',''Boston'',02128,''MA'')';
- DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
+DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
 END IF;
 
 
@@ -113,7 +113,7 @@ EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_addres
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Ruby Hospital'','' School St'',''4th lane'',''Boston'',02118,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Beth Isarel'', ''aphonsus street'',''Building 12'',''Boston'',02121,''MA'')';
 EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''MASS general Hospital'', ''32 Fruit St'',''12th lane'',''Boston'',02114,''MA'')';
-                    DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
+DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
 END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'DEPARTMENTS';
