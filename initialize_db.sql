@@ -1,3 +1,5 @@
+select * from user_tables;
+
 SET SERVEROUTPUT ON;
 DECLARE
 nCount NUMBER;
@@ -32,23 +34,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE PATIENT
             )';
     DBMS_OUTPUT.PUT_LINE('PATIENT TABLE CREATED');
     
-   -----------patient insertions------------------
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''tina'',''natekar'',''2 torpie street'',''apt-1'',''boston'',02120,''MA'',TO_DATE(''1998/06/03'', ''yyyy/mm/dd''),4766443677,''tina@gmail.com'',312829898)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''miranda'',''tate'',''89 Huntington street'',''apt-13'',''Dayton'',021320,''OH'',to_date(''03.02.1988'',''mm/dd/yyyy''),4762134677,''MIR@gmail.com'',1228);)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''nina'',''dobrev'',''smith street'',''apt-3'',''boston'',98765,''MA'',to_date(''08.12.1991'',''mm/dd/yyyy''),8576423132,''nina@gmail.com'',348576338)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''tyler'',''smith'',''56 va medical center'',''apt-89'',''baltimore'',01115,''MY'',to_date(''01.08.1998'',''mm/dd/yyyy''),8573179680,''smith@gmail.com'',294755093)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''steve'',''warner'',''13 heath street'',''apt-46'',''boston'',09800,''MA'',to_date(''01.06.1989'',''mm/dd/yyyy''),5642356446,''steve@gmail.com'',4857647657)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''marcus'',''stoinis'',''10 horadon way'',''apt-199'',''houston'',01219,''TX'',to_date(''01.03.1991'',''mm/dd/yyyy''),9877746536,''ms@gmail.com'',498570909)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''jaina'',''abideen'',''988 gargoil street'',''apt-76'',''san diego'',028810,''CA'',to_date(''09.10.2001'',''mm/dd/yyyy''),992292250,''jainahero@gmail.com'',948567878)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''ross'',''gallor'',''1 hemenway street'',''apt-34'',''boston'',02115,''MA'',to_date(''12.12.1988'',''mm/dd/yyyy''),7566677769,''ross@yahoo.com'',298341198)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''virat'',''kohli'',''75 st alhonsus'',''apt-816'',''boston'',02120,''MA'',to_date(''09.30.1998'',''mm/dd/yyyy''),3571536757,''virat70@gmail.com'',198342541)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Thibau'',''courtouis'',''13 santiago bernabeu street'',''apt-1'',''roxbury'',02119,''MA'',to_date(''12.19.1987'',''mm/dd/yyyy''),6179924681,''t.coutouis@outlook.com'',984561901)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''David'',''Alaba'',''04 wakulah street'',''apt-13'',''boston'',02120,''MA'',to_date(''09.09.1985'',''mm/dd/yyyy''),9443916852,''david04@yahoo.co.in'',2004)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Eder'',''Militao'',''22 washington street'',''apt-29'',''Roxbury'',02119,''MA'',to_date(''06.24.1992'',''mm/dd/yyyy''),9443442747,''edermilitao0335@gmail.com'',487561517)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Ferland'',''Mendy'',''44 park drive street'',''apt-3'',''boston'',98765,''MA'',to_date(''04.21.1992'',''mm/dd/yyyy''),9486612364,''mendy.f@realmadrid.com'',983210908)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Dani'',''Carvajal'','' 02 bay state place'',''apt-2014'',''boston'',02127,''MA'',to_date(''05.17.1998'',''mm/dd/yyyy''),9443913624,''danic2@gmail.com'',0990)';
-EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Tony'',''Kroos'',''13 heath street'',''apt-23'',''boston'',02120,''MA'',to_date(''06.14.1974'',''mm/dd/yyyy''),9443321323,''kroos_toni8@gmail.com'',7986)';
-DBMS_OUTPUT.PUT_LINE('PATIENT DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''tina'',''natekar'',''2 torpie street'',''apt-1'',''boston'',02120,''MA'',TO_DATE(''1998/06/03'', ''yyyy/mm/dd''),4766443677,''tina@gmail.com'',312829898)';
+    DBMS_OUTPUT.PUT_LINE('PATIENT DATA INSERTION COMPLETED');
 END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'DOCTOR';
@@ -74,18 +61,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOCTOR
             )';
     DBMS_OUTPUT.PUT_LINE('DOCTOR TABLE CREATED');
     
-    ---------------doctor insertions-----------------------
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Dolores'',''Abernathy'',501,''16 Notre Dame'',''apt 1'',''Boston'',02119,''MA'')';   
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Bernard'',''lowe'',502,''17 center'',''apt 2'',''Boston'',02120,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Maeve'',''Millay'',503,''18 marcella'',''apt 3'',''Boston'',02121,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Teddy'',''Flood'',504,''19 forsyth'',''apt 4'',''Boston'',02122,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Robert'',''Ford'',505,''20 huntington ave'',''apt 5'',''Boston'',02123,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Angela'',''Sarafyan'',506,''21 Hemenway'',''apt 6'',''Boston'',02124,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Charlotte'',''Hale'',507,''22 Park'',''apt 7'',''Boston'',02125,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Caleb'',''Nichols'',508,''23 Fisher'',''apt 8'',''Boston'',02126,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''Lee'',''Sizemore'',509,''24 heath'',''apt 9'',''Boston'',02127,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name,ssn) values (''James'',''Delos'',510,''25 Cowing street'',''apt 10'',''Boston'',02128,''MA'')';
-DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Dolores'',''Abernathy'',501,''16 Notre Dame'',''apt 1'',''Boston'',02119,''MA'')';
+    DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
 END IF;
 
 
@@ -108,12 +85,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL
             ''VA'',''WA'',''WV'',''WI'',''WY'')))';
     DBMS_OUTPUT.PUT_LINE('HOSPITAL TABLE CREATED');
     
-    -----------------hospital insertions--------------------------
-EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Apollo Hospital'', ''Smith St'',''Building 4'',''Boston'',02116,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Ruby Hospital'','' School St'',''4th lane'',''Boston'',02118,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Beth Isarel'', ''aphonsus street'',''Building 12'',''Boston'',02121,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''MASS general Hospital'', ''32 Fruit St'',''12th lane'',''Boston'',02114,''MA'')';
-DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Apollo Hospital'', ''Smith St'',''Building 4'',''Boston'',02116,''MA'')';
+    DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
 END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'DEPARTMENTS';
@@ -127,20 +100,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DEPARTMENTS
             )';
     DBMS_OUTPUT.PUT_LINE('DEPARTMENTS TABLE CREATED');
     
-    --------------------department insertions----------------------                    
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Radiology'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''pediatrics'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Hematology'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Opthalmology'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Nursing'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Pathology'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Diagnostic Image'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''ortho'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Finance'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''multi speciality'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Health & Safety'')';
-EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''ENT'')';
-DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Radiology'')';
+    DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
 END IF;
 
 
@@ -156,23 +117,95 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL_DEPT
             )';
     DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT TABLE CREATED');
     
-    -----------------hospital_dept insertions----------------------
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,10)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (120,30)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (30,50)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (290,450)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (230,140)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (340,10)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (187,14)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (32,15)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (94,16)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (89,23)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (39,34)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (71,56)';
-EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (123,99)'; 
-DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,10)';
+    DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT DATA INSERTION COMPLETED');
 END IF;
 
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'DOCTOR_HOSPITAL';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('DOCTOR_HOSPITAL TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOCTOR_HOSPITAL
+            (	
+                doc_hospital_id number GENERATED BY DEFAULT AS IDENTITY primary key,
+                hos_dept_id number references hospital_dept (hos_dept_id),
+                doctor_id number references doctor (doctor_id)
+            )';
+    DBMS_OUTPUT.PUT_LINE('DOCTOR_HOSPITAL TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOCTOR_HOSPITAL(hos_dept_id,doctor_id) values (1,1)';
+    DBMS_OUTPUT.PUT_LINE('DOCTOR_HOSPITAL DATA INSERTION COMPLETED');
+END IF;
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'PATIENT_HISTORY';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('PATIENT_HISTORY TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE PATIENT_HISTORY
+            (	
+                file_id number GENERATED BY DEFAULT AS IDENTITY primary key,
+                treatment varchar2(200),
+                date_of_treatment date
+            )';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_HISTORY TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO PATIENT_HISTORY(treatment,date_of_treatment) values (''Anthrax'',to_date(''11/19/2019'',''mm/dd/yyyy''))';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_HISTORY DATA INSERTION COMPLETED');
+END IF;
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'PATIENT_DOCUMENT';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('PATIENT_DOCUMENT TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE PATIENT_DOCUMENT
+            (	
+                patient_file_id number GENERATED BY DEFAULT AS IDENTITY primary key,
+                patient_id number references patient (patient_id),
+                file_id number references patient_history (file_id)
+            )';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_DOCUMENT TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO PATIENT_DOCUMENT(patient_id,file_id) values (1,1)';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_DOCUMENT DATA INSERTION COMPLETED');
+END IF;
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'DOC_AVAILABILITY';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('DOC_AVAILABILITY TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOC_AVAILABILITY
+            (	
+                avail_id number GENERATED AS IDENTITY (START WITH 01 INCREMENT BY 1) primary key,
+                doctor_id number references doctor(doctor_id),
+                day varchar2(3),
+                start_time date, 
+                end_time date
+            )';
+    DBMS_OUTPUT.PUT_LINE('DOC_AVAILABILITY TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''MON'',TO_DATE(''10:00'',''hh24:mi''),TO_DATE(''18:00'',''hh24:mi''))';
+    DBMS_OUTPUT.PUT_LINE('DOC_AVAILABILITY DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'APPOINTMENTS';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('APPOINTMENTS TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
+            (	
+                appointment_id number GENERATED AS IDENTITY (START WITH 20 INCREMENT BY 1) primary key,
+                apmt_date date,
+                doc_hospital_id number references doctor_hospital(doc_hospital_id),
+                file_id number references patient_history(file_id),
+                start_time date
+            )';
+    DBMS_OUTPUT.PUT_LINE('APPOINTMENTS TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/04'', ''yyyy/mm/dd''),1,1,TO_DATE(''10:00'',''hh24:mi''))';
+    DBMS_OUTPUT.PUT_LINE('APPOINTMENTS DATA INSERTION COMPLETED');
+END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'VACCINE';
 
@@ -191,6 +224,24 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE
 END IF;
 
 
+SELECT count(*) into nCount FROM user_tables where table_name = 'VACCINE_RECORDS';
+
+IF(nCount > 0) THEN
+    DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE_RECORDS  
+            (	
+                record_id number GENERATED AS IDENTITY (START WITH 15 INCREMENT BY 2) primary key,
+                patient_id number references patient(patient_id),
+                vaccine_id number references vaccine(vaccine_id),
+                date_of_vaccination date
+            )';
+    DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,1,to_date(''08/08/2021'',''mm/dd/yyyy''))';
+    DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS DATA INSERTION COMPLETED');
+END IF;
+
+
 SELECT count(*) into nCount FROM user_tables where table_name = 'COVERAGE';
 
 IF(nCount > 0) THEN 
@@ -205,20 +256,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE COVERAGE
             )';
     DBMS_OUTPUT.PUT_LINE('COVERAGE TABLE CREATED');
     
-    -----------------coverage insertions----------------------------------
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''silver'',''Y'',''N'',2400)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Gold'',''Y'',''N'',3500)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Platinum'',''Y'',''Y'',5000)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Diamond'',''Y'',''Y'',6500)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Silver'',''Y'',''N'',2400)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Gold'',''Y'',''N'',3200)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Platinum'',''Y'',''Y'',4800)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Diamond'',''Y'',''Y'',6700)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Platinum'',''Y'',''Y'',5200)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''Gold'',''N'',''N'',3600)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''silver'',''Y'',''N'',2400)';
-EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''silver'',''Y'',''N'',2400)';
-DBMS_OUTPUT.PUT_LINE('COVERAGE DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''silver'',''Y'',''N'',2400)';
+    DBMS_OUTPUT.PUT_LINE('COVERAGE DATA INSERTION COMPLETED');
 END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'INSURANCE_PROVIDER';
@@ -238,22 +277,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_PROVIDER
             )';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PROVIDER TABLE CREATED');
     
-    -----------insurance insertions------------------
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Blue Cross Blue Shield'',''360 Atlantic Ave'',''Suite 1'',''Boston'',02142,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''reinsurance'', ''786 mass avenue'', ''office-35'',''boston'',09846,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''bcbs'', ''Manhattan Boulevard'',''office-5'',''Manhattan'',02446,''NY'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Blue Cross Blue Shield'',''303 southuntington Ave'',''office 20'',''Boston'',02120,''MA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''bcbs'', ''10 horadon way'',''Suite-199'',''houston'',01219,''TX'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''reinsurance'', ''988 gargoil street'',''apt-76'',''san diego'',028810,''CA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Aetna'', ''1 American Way'',''building 5'',''Santa Ana'',92707,''CA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Cigna'', ''519 Cumberland'',''Ave 1#'',''Portland'',04101,''ME'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Anthem'', ''98 Victoria Ave'',''office 34'',''Cranston'',02920,''RI'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Blue Shield of California'',''1337 N San Joaquin St'',''build 3'',''Stockton'',95202,''CA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Humana'', ''9851 South Redwood Street'',''apt 103'',''Titusville'',32780,''FL'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''TATA AIG'', ''2 E 41ST'',''Suite 1'',''BAYONNE'',0024803,''NJ'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Kaiser Permanente'', ''317 Fairchild Dr'',''Suite 1'',''Travis Afb'',94535,''CA'')';
-EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Molina Healthcare'', ''197 Summerhouse Rd'',''Suite 231'',''Hollywood'',33024,''FL'')';
-DBMS_OUTPUT.PUT_LINE('INSURANCE_PROVIDER DATA INSERTION COMPLETED');
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Blue Cross Blue Shield'',''360 Atlantic Ave'',''Suite 1'',''Boston'',02142,''MA'')';
+    DBMS_OUTPUT.PUT_LINE('INSURANCE_PROVIDER DATA INSERTION COMPLETED');
 END IF;
 
 
@@ -269,38 +294,143 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_PLAN
             )';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PLAN TABLE CREATED');
     
-------------------insurance plan-----------------------------------------
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,1)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3012,4001)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3013,4031)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3015,4501)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3016,6401)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3017,4701)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3018,4051)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3019,4401)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3020,4021)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3021,4801)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3022,4091)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3023,4704)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3024,4151)';
-EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (3025,4265)';
-
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,1)';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PLAN DATA INSERTION COMPLETED');
 END IF;
 
 
+SELECT count(*) into nCount FROM user_tables where table_name = 'BILLING';
 
-
-
+IF(nCount > 0) THEN 
+    DBMS_OUTPUT.PUT_LINE('BILLING TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE BILLING  
+            (	
+                bill_no number GENERATED AS IDENTITY (START WITH 10000 INCREMENT BY 1) primary key,
+                amount number,
+                appointment_id number references appointments(appointment_id)
+            )';
+    DBMS_OUTPUT.PUT_LINE('BILLING TABLE CREATED');
     
---    EXECUTE IMMEDIATE q'[INSERT INTO MASTER_TABLE VALUES ('RECIEPT','CREATE TABLE RECIEPT  
---            (	
---                reciept_no NUMBER GENERATED AS IDENTITY (START WITH 1000 INCREMENT BY 3) primary key,
---                date_of_payment date,
---                bill_no number references Billing (bill_no)
---            )
---    ')]';
+    EXECUTE IMMEDIATE 'INSERT INTO BILLING (amount,appointment_id) values (1500,20)';
+    DBMS_OUTPUT.PUT_LINE('BILLING DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'RECEIPT';
+
+IF(nCount > 0) THEN 
+    DBMS_OUTPUT.PUT_LINE('RECEIPT TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE RECEIPT  
+            (	
+                receipt_no NUMBER GENERATED AS IDENTITY (START WITH 1000 INCREMENT BY 3) primary key,
+                date_of_payment date,
+                bill_no number references Billing(bill_no)
+            )';
+    DBMS_OUTPUT.PUT_LINE('RECEIPT TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO RECEIPT (date_of_payment,bill_no) values (TO_DATE(''2022/04/04'', ''yyyy/mm/dd''),10000)';
+    DBMS_OUTPUT.PUT_LINE('RECEIPT DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'INSURANCE_POLICY';
+
+IF(nCount > 0) THEN 
+    DBMS_OUTPUT.PUT_LINE('INSURANCE_POLICY TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_POLICY
+        (	
+                policy_id number generated as identity (start with  1000000 increment by 1) primary key,
+                pol_start_date date,
+                pol_end_date date,
+                duration_months number,
+                patient_copays number,
+                premium_payment_option VARCHAR2(5),
+                premium_due_date date,
+                plan_id number references insurance_plan(plan_id)
+            )';
+    DBMS_OUTPUT.PUT_LINE('INSURANCE_POLICY TABLE CREATED');
+    
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_POLICY(pol_start_date,pol_end_date,duration_months,patient_copays,premium_payment_option,premium_due_date,plan_id) values (to_date(''04/01/2019'',''mm/dd/yyyy''),to_date(''03/31/2023'',''mm/dd/yyyy''),20,100,''QUART'',to_date(''06/30/2022'',''mm/dd/yyyy''),10)';
+    DBMS_OUTPUT.PUT_LINE('INSURANCE_POLICY DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'PATIENT_POLICY';
+
+IF(nCount > 0) THEN 
+    DBMS_OUTPUT.PUT_LINE('PATIENT_POLICY TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE PATIENT_POLICY   
+            (	
+                patient_policy_id number generated AS identity (start with 300000 increment by 1) primary key,
+                policy_id number references INSURANCE_POLICY(policy_id),
+                patient_id number references patient(patient_id)
+            )';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_POLICY TABLE CREATED'); 
+    
+    EXECUTE IMMEDIATE 'INSERT INTO PATIENT_POLICY(policy_id,patient_id) values (1000000,1)';
+    DBMS_OUTPUT.PUT_LINE('PATIENT_POLICY DATA INSERTION COMPLETED');
+END IF;
+
+
+SELECT count(*) into nCount FROM user_tables where table_name = 'PREMIUM_PAYMENTS';
+
+IF(nCount > 0) THEN 
+    DBMS_OUTPUT.PUT_LINE('PREMIUM_PAYMENTS TABLE ALREADY EXISTS');
+ELSE EXECUTE IMMEDIATE 'CREATE TABLE PREMIUM_PAYMENTS    
+            (	
+                premium_bill_no number generated as identity (start with 200 increment BY 2) primary key,
+                policy_id number references INSURANCE_POLICY(policy_id),
+                receipt_no NUMBER references receipt(receipt_no)
+            )';
+    DBMS_OUTPUT.PUT_LINE('PREMIUM_PAYMENTS TABLE CREATED'); 
+    
+    EXECUTE IMMEDIATE 'INSERT INTO PREMIUM_PAYMENTS(policy_id,receipt_no) values (1000000,1000)';
+    DBMS_OUTPUT.PUT_LINE('PREMIUM_PAYMENTS DATA INSERTION COMPLETED');
+END IF;
 
 COMMIT;
 
 END;
+
+/
+
+
+select * from user_tables;
+select * from patient;
+select * from doctor;
+select * from hospital;
+select * from departments;
+select * from hospital_dept;
+select * from doctor_hospital;
+select * from patient_history;
+select * from patient_document;
+select * from vaccine;
+select * from vaccine_records;
+select * from doc_availability;
+select * from appointments;
+select * from insurance_provider;
+select * from coverage;
+select * from insurance_plan;
+select * from billing;
+select * from INSURANCE_POLICY;
+select * from receipt;
+drop table patient cascade constraints;
+drop table doctor cascade constraints;
+drop table hospital cascade constraints;
+drop table departments cascade constraints;
+drop table hospital_dept cascade constraints;
+drop table doctor_hospital cascade constraints;
+drop table doc_availability cascade constraints;
+drop table appointments cascade constraints;
+drop table patient_history cascade constraints;
+drop table patient_document cascade constraints;
+drop table vaccine cascade constraints;
+drop table vaccine_records cascade constraints;
+drop table insurance_provider cascade constraints;
+drop table coverage cascade constraints;
+drop table insurance_plan cascade constraints;
+drop table billing cascade constraints;
+drop table INSURANCE_POLICY cascade constraints;
+drop table receipt cascade constraints;
+drop table patient_policy cascade constraints;
+drop table PREMIUM_PAYMENTS cascade constraints;
