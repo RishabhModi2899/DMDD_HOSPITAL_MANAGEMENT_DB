@@ -197,7 +197,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
                 apmt_date date,
                 doc_hospital_id number references doctor_hospital(doc_hospital_id),
                 file_id number references patient_history(file_id),
-                start_time date
+                start_time TIMESTAMP
             )';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS TABLE CREATED');
     
@@ -391,30 +391,4 @@ COMMIT;
 END;
 
 /
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 84e9cc26a97e72341114e9a4f96b4c02b2e53df5
