@@ -1,5 +1,6 @@
 set serveroutput on;
 ------------------------- Creating triggers --------------------------
+-- Trigger to populate the billing table when an appointment is booked
 CREATE OR REPLACE TRIGGER OnAppointmentBooking 
 AFTER INSERT ON APPOINTMENTS
 DECLARE 
