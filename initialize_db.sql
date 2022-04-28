@@ -33,7 +33,23 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE PATIENT
     DBMS_OUTPUT.PUT_LINE('PATIENT TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''tina'',''natekar'',''2 torpie street'',''apt-1'',''boston'',02120,''MA'',TO_DATE(''1998/06/03'', ''yyyy/mm/dd''),4766443677,''tina@gmail.com'',312829898)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''miranda'',''tate'',''89 Huntington street'',''apt-13'',''Dayton'',021320,''OH'',to_date(''03.02.1988'',''mm/dd/yyyy''),4762134677,''mir@gmail.com'',792353679)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''nina'',''dobrev'',''smith street'',''apt-3'',''boston'',98765,''MA'',to_date(''08.12.1991'',''mm/dd/yyyy''),8576423132,''nina@gmail.com'',348576338)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''tyler'',''smith'',''56 va medical center'',''apt-89'',''baltimore'',01115,''MA'',to_date(''01.08.1998'',''mm/dd/yyyy''),8573179680,''smith@gmail.com'',294755093)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''steve'',''warner'',''13 heath street'',''apt-46'',''boston'',09800,''MA'',to_date(''01.06.1989'',''mm/dd/yyyy''),5642356446,''steve@gmail.com'',485764767)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''marcus'',''stoinis'',''10 horadon way'',''apt-199'',''houston'',01219,''TX'',to_date(''01.03.1991'',''mm/dd/yyyy''),9877746536,''ms@gmail.com'',498570909)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''jaina'',''abideen'',''988 gargoil street'',''apt-76'',''san diego'',028810,''CA'',to_date(''09.10.2001'',''mm/dd/yyyy''),992292250,''jainahero@gmail.com'',948567878)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''ross'',''gallor'',''1 hemenway street'',''apt-34'',''boston'',02115,''MA'',to_date(''12.12.1988'',''mm/dd/yyyy''),7566677769,''ross@yahoo.com'',298341198)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''virat'',''kohli'',''75 st alhonsus'',''apt-816'',''boston'',02120,''MA'',to_date(''09.30.1998'',''mm/dd/yyyy''),3571536757,''virat70@gmail.com'',198342541)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Thibau'',''courtouis'',''13 santiago bernabeu street'',''apt-1'',''roxbury'',02119,''MA'',to_date(''12.19.1987'',''mm/dd/yyyy''),6179924681,''t.coutouis@outlook.com'',984561901)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''David'',''Alaba'',''04 wakulah street'',''apt-13'',''boston'',02120,''MA'',to_date(''09.09.1985'',''mm/dd/yyyy''),9443916852,''david04@yahoo.co.in'',791037891)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Eder'',''Militao'',''22 washington street'',''apt-29'',''Roxbury'',02119,''MA'',to_date(''06.24.1992'',''mm/dd/yyyy''),9443442747,''edermilitao0335@gmail.com'',487561517)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Ferland'',''Mendy'',''44 park drive street'',''apt-3'',''boston'',98765,''MA'',to_date(''04.21.1992'',''mm/dd/yyyy''),9486612364,''mendy.f@realmadrid.com'',983210908)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Dani'',''Carvajal'','' 02 bay state place'',''apt-2014'',''boston'',02127,''MA'',to_date(''05.17.1998'',''mm/dd/yyyy''),9443913624,''danic2@gmail.com'',249784468)';
+    EXECUTE IMMEDIATE 'INSERT INTO patient (first_name,last_name,address_line1,address_line2,city,zip,state_name,DOB,contact_no,email_id,SSN) VALUES (''Tony'',''Kroos'',''13 heath street'',''apt-23'',''boston'',02120,''MA'',to_date(''06.14.1974'',''mm/dd/yyyy''),9443321323,''kroos_toni8@gmail.com'',798624678)';
+
     DBMS_OUTPUT.PUT_LINE('PATIENT DATA INSERTION COMPLETED');
+    
 END IF;
 
 SELECT count(*) into nCount FROM user_tables where table_name = 'DOCTOR';
@@ -60,6 +76,16 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOCTOR
     DBMS_OUTPUT.PUT_LINE('DOCTOR TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Dolores'',''Abernathy'',501,''16 Notre Dame'',''apt 1'',''Boston'',02119,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Bernard'',''lowe'',502,''17 center'',''apt 2'',''Boston'',02120,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Maeve'',''Millay'',503,''18 marcella'',''apt 3'',''Boston'',02121,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Teddy'',''Flood'',504,''19 forsyth'',''apt 4'',''Boston'',02122,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Robert'',''Ford'',505,''20 huntington ave'',''apt 5'',''Boston'',02123,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Angela'',''Sarafyan'',506,''21 Hemenway'',''apt 6'',''Boston'',02124,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Charlotte'',''Hale'',507,''22 Park'',''apt 7'',''Boston'',02125,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Caleb'',''Nichols'',508,''23 Fisher'',''apt 8'',''Boston'',02126,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''Lee'',''Sizemore'',509,''24 heath'',''apt 9'',''Boston'',02127,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO Doctor (doc_first_name,doc_last_name,license_no,doc_address_line1,doc_address_line2,doc_city,doc_zip,doc_state_name) values (''James'',''Delos'',510,''25 Cowing street'',''apt 10'',''Boston'',02128,''MA'')';
+
     DBMS_OUTPUT.PUT_LINE('DOCTOR DATA INSERTION COMPLETED');
 END IF;
 
@@ -84,6 +110,10 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL
     DBMS_OUTPUT.PUT_LINE('HOSPITAL TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Apollo Hospital'', ''Smith St'',''Building 4'',''Boston'',02116,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Ruby Hospital'','' School St'',''4th lane'',''Boston'',02118,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''Beth Isarel'', ''aphonsus street'',''Building 12'',''Boston'',02121,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO hospital(hosp_name,hosp_address_line1,hosp_address_line2,hosp_city,hosp_zip,hosp_state) values (''MASS general Hospital'', ''32 Fruit St'',''12th lane'',''Boston'',02114,''MA'')';
+
     DBMS_OUTPUT.PUT_LINE('HOSPITAL DATA INSERTION COMPLETED');
 END IF;
 
@@ -94,11 +124,23 @@ IF(nCount > 0) THEN
 ELSE EXECUTE IMMEDIATE 'CREATE TABLE DEPARTMENTS
             (	
                 dept_id number GENERATED AS IDENTITY (START WITH 10 INCREMENT BY 20) primary key,
-                dept_name varchar2(20) 
+                dept_name varchar2(30) 
             )';
     DBMS_OUTPUT.PUT_LINE('DEPARTMENTS TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Radiology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Critical Care'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Pediatrics'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Haematology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Opthalmology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Nursing'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Pathology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Diagnostic Image'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Ortho'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Finance'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Accident and Emergency'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Anesthetics'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Health and Safety'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Cardiology'')';
     DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
 END IF;
 
@@ -116,6 +158,46 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE HOSPITAL_DEPT
     DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,10)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,30)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,50)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,70)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,90)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,110)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,130)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,150)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,170)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,190)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (50,250)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,10)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,30)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,50)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,70)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,90)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,110)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,130)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,150)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,170)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,190)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (51,230)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,10)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,30)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,50)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,70)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,90)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,250)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,230)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,150)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,170)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,190)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (52,250)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,170)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,190)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,50)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,70)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,90)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,110)';
+    EXECUTE IMMEDIATE 'INSERT INTO HOSPITAL_DEPT(hospital_id,dept_id) values (53,130)';
+    
     DBMS_OUTPUT.PUT_LINE('HOSPITAL_DEPT DATA INSERTION COMPLETED');
 END IF;
 
@@ -177,12 +259,65 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DOC_AVAILABILITY
                 avail_id number GENERATED AS IDENTITY (START WITH 01 INCREMENT BY 1) primary key,
                 doctor_id number references doctor(doctor_id),
                 day varchar2(3),
-                start_time date, 
-                end_time date
+                start_time timestamp, 
+                end_time timestamp
             )';
     DBMS_OUTPUT.PUT_LINE('DOC_AVAILABILITY TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''MON'',TO_DATE(''10:00'',''hh24:mi''),TO_DATE(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''MON'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''TUE'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''WED'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''THU'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (1,''FRI'',TO_TIMESTAMP(''13:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (2,''MON'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (2,''TUE'',TO_TIMESTAMP(''14:00'',''hh24:mi''),TO_TIMESTAMP(''20:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (2,''WED'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (2,''THU'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (2,''FRI'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''16:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (3,''MON'',TO_TIMESTAMP(''08:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (3,''TUE'',TO_TIMESTAMP(''08:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (3,''WED'',TO_TIMESTAMP(''15:00'',''hh24:mi''),TO_TIMESTAMP(''19:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (3,''THU'',TO_TIMESTAMP(''15:00'',''hh24:mi''),TO_TIMESTAMP(''19:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (3,''FRI'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''13:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (4,''MON'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (4,''TUE'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (4,''WED'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (4,''THU'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (4,''FRI'',TO_TIMESTAMP(''13:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (5,''MON'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''20:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (5,''TUE'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''16:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (5,''WED'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''17:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (5,''THU'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''15:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (5,''FRI'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''13:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (6,''MON'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (6,''TUE'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (6,''FRI'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (6,''MON'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (6,''THU'',TO_TIMESTAMP(''13:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (7,''TUE'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (7,''WED'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (7,''THU'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (8,''MON'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (8,''THU'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (8,''FRI'',TO_TIMESTAMP(''14:00'',''hh24:mi''),TO_TIMESTAMP(''20:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (9,''TUE'',TO_TIMESTAMP(''09:00'',''hh24:mi''),TO_TIMESTAMP(''16:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (9,''WED'',TO_TIMESTAMP(''14:00'',''hh24:mi''),TO_TIMESTAMP(''20:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (9,''THU'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (9,''FRI'',TO_TIMESTAMP(''13:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (10,''MON'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (10,''TUE'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (10,''WED'',TO_TIMESTAMP(''10:00'',''hh24:mi''),TO_TIMESTAMP(''14:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (10,''THU'',TO_TIMESTAMP(''12:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO DOC_AVAILABILITY(doctor_id,day,start_time,end_time) values (10,''FRI'',TO_TIMESTAMP(''13:00'',''hh24:mi''),TO_TIMESTAMP(''18:00'',''hh24:mi''))';
+
     DBMS_OUTPUT.PUT_LINE('DOC_AVAILABILITY DATA INSERTION COMPLETED');
 END IF;
 
@@ -197,11 +332,11 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
                 apmt_date date,
                 doc_hospital_id number references doctor_hospital(doc_hospital_id),
                 file_id number references patient_history(file_id),
-                start_time TIMESTAMP
+                start_time timestamp
             )';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/04'', ''yyyy/mm/dd''),1,1,TO_DATE(''10:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/04'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:00'',''hh24:mi''))';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS DATA INSERTION COMPLETED');
 END IF;
 
@@ -217,7 +352,17 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE
             )';
     DBMS_OUTPUT.PUT_LINE('VACCINE TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO VACCINE(vaccine_name,inoculated_by_days) values (''pfizer'',75)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Pfizer-Covid'',150)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Moderna-Covid'',30)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''JJ-Covid'',60)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Influenza'',180)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''MMR'',5)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Typhoid'',3)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Hepatitis A'',30)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Hepatitis B'',90)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Diphtheria'',15)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Tetanus'',10)';
+
     DBMS_OUTPUT.PUT_LINE('VACCINE DATA INSERTION COMPLETED');
 END IF;
 
@@ -228,14 +373,102 @@ IF(nCount > 0) THEN
     DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS TABLE ALREADY EXISTS');
 ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE_RECORDS  
             (	
-                record_id number GENERATED AS IDENTITY (START WITH 15 INCREMENT BY 2) primary key,
+                record_id number GENERATED AS IDENTITY primary key,
                 patient_id number references patient(patient_id),
                 vaccine_id number references vaccine(vaccine_id),
                 date_of_vaccination date
             )';
     DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,1,to_date(''08/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,1,to_date(''04/04/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,7,to_date(''03/23/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,9,to_date(''02/13/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,7,to_date(''04/30/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,13,to_date(''01/12/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,15,to_date(''04/26/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (1,13,to_date(''02/11/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,1,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,1,to_date(''04/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,19,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,15,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,7,to_date(''12/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,7,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,9,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,11,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (2,13,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (3,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (3,17,to_date(''08/23/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (3,15,to_date(''12/31/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (3,13,to_date(''06/23/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (3,13,to_date(''08/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,1,to_date(''01/26/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,13,to_date(''03/19/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,15,to_date(''02/20/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,7,to_date(''04/10/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,1,to_date(''02/20/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,3,to_date(''04/21/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,11,to_date(''10/30/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (4,17,to_date(''12/02/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (5,3,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (5,3,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (5,7,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,9,to_date(''08/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,11,to_date(''01/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,13,to_date(''01/04/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,11,to_date(''05/02/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,15,to_date(''01/02/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,13,to_date(''02/24/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,17,to_date(''04/26/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,19,to_date(''01/29/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,19,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (6,9,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (7,5,to_date(''03/01/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (7,5,to_date(''04/03/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (7,9,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (7,11,to_date(''05/02/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,1,to_date(''01/24/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,1,to_date(''03/24/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,9,to_date(''02/23/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,9,to_date(''04/05/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,13,to_date(''11/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,13,to_date(''02/18/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (8,17,to_date(''04/02/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,17,to_date(''08/08/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,17,to_date(''04/13/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,5,to_date(''02/10/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,5,to_date(''04/15/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,11,to_date(''08/30/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,19,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,11,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,13,to_date(''01/18/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,13,to_date(''03/28/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (9,7,to_date(''07/02/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (10,1,to_date(''08/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,1,to_date(''02/28/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,1,to_date(''04/24/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,3,to_date(''03/30/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,5,to_date(''01/27/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,7,to_date(''03/24/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,9,to_date(''07/21/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,11,to_date(''03/31/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,13,to_date(''11/12/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (11,15,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,1,to_date(''07/04/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,1,to_date(''10/30/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,7,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,9,to_date(''09/03/2021'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,15,to_date(''03/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,17,to_date(''02/08/2022'',''mm/dd/yyyy''))';
+    EXECUTE IMMEDIATE 'INSERT INTO VACCINE_RECORDS(patient_id,vaccine_id,date_of_vaccination) values (12,19,to_date(''01/08/2022'',''mm/dd/yyyy''))';
+    
     DBMS_OUTPUT.PUT_LINE('VACCINE_RECORDS DATA INSERTION COMPLETED');
 END IF;
 
@@ -254,7 +487,15 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE COVERAGE
             )';
     DBMS_OUTPUT.PUT_LINE('COVERAGE TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium)values(''silver'',''Y'',''N'',2400)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''N'',2400)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''Y'',2700)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''N'',3500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''Y'',3800)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''N'',5000)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''Y'',4800)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''N'',6500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',6700)';
+
     DBMS_OUTPUT.PUT_LINE('COVERAGE DATA INSERTION COMPLETED');
 END IF;
 
@@ -276,6 +517,11 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_PROVIDER
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PROVIDER TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Blue Cross Blue Shield'',''360 Atlantic Ave'',''Suite 1'',''Boston'',02142,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Reinsurance'',''786 Mass Avenue'',''office-35'',''Boston'',09846,''MA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Aetna'',''Manhattan Boulevard'',''Office-5'',''Manhattan'',02446,''NY'')';
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Kaiser Foundation Health Plan'',''4 Chester Spring'',''Charlie Street'',''Exton'',00046,''PA'')';
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_PROVIDER(provider_name,provider_address_line1,provider_address_line2,provider_city,provider_zip,provider_state) VALUES (''Cigna'',''4 Bloomfield'',''Charlie Street'',''Connecticut'',00046,''PA'')';
+    
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PROVIDER DATA INSERTION COMPLETED');
 END IF;
 
@@ -293,6 +539,38 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_PLAN
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PLAN TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15011,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15022,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15033,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15044,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15055,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15066,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15077,1)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15011,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15022,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15033,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15044,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15055,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15066,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15077,2)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,3)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15022,3)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15044,3)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15066,3)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15011,4)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15033,4)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15055,4)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15077,4)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15000,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15011,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15022,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15033,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15033,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15044,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15055,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15066,5)';
+    EXECUTE IMMEDIATE 'INSERT INTO insurance_plan (coverage_id,provider_id) values (15077,5)';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_PLAN DATA INSERTION COMPLETED');
 END IF;
 
@@ -391,4 +669,3 @@ COMMIT;
 END;
 
 /
-
