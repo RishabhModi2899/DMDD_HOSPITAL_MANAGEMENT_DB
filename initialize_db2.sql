@@ -196,6 +196,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DEPARTMENTS
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Anesthetics'')';
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Health and Safety'')';
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Cardiology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Psychology'')';
     DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
 END IF;
 
@@ -603,6 +604,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Hepatitis B'',90)';
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Diphtheria'',15)';
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Tetanus'',10)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Inluenza'',10)';
+
 
     DBMS_OUTPUT.PUT_LINE('VACCINE DATA INSERTION COMPLETED');
 END IF;
@@ -729,13 +732,15 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE COVERAGE
     DBMS_OUTPUT.PUT_LINE('COVERAGE TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''N'',2400)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''Y'',2700)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''N'',3500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''N'',2700)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''Y'',3500)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''Y'',3800)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''N'',5000)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''Y'',4800)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''N'',6500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',6500)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',6700)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',7700)';
+
 
     DBMS_OUTPUT.PUT_LINE('COVERAGE DATA INSERTION COMPLETED');
 END IF;
