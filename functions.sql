@@ -1,4 +1,5 @@
-Set Serveroutput on
+Set Serveroutput on;
+
 create or replace function payment_info (bn in number)
 return number
 is 
