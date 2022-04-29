@@ -343,6 +343,13 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/12/17'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''11:35'',''hh24:mi''))';
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/01'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''07:55'',''hh24:mi''))';
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/03/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''03:00'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/12/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:30'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/11/29'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''09:40'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/01/15'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''07:10'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/07/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''06:45'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/08/07'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''01:55'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/04/09'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:20'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/10/23'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''03:26'',''hh24:mi''))';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS DATA INSERTION COMPLETED');
 END IF;
 
