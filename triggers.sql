@@ -44,23 +44,25 @@ ELSE
 initial_bill := 500;
 END IF;
 
-IF plan_name_var = 'GOLD' THEN
+IF plan_name_var = 'Gold' THEN
 final_amount := (initial_bill - (0.50 * (initial_bill)));
 DBMS_OUTPUT.put_line('final amt ' || final_amount);
-ELSIF plan_name_var = 'SILVER' THEN
+ELSIF plan_name_var = 'Silver' THEN
 final_amount := (initial_bill - (0.40 * (initial_bill)));
 DBMS_OUTPUT.put_line('final amt ' || final_amount);
-ELSE
+ELSIF plan_name_var = 'Platinum' THEN
 final_amount := (initial_bill - (0.60 * (initial_bill)));
 DBMS_OUTPUT.put_line('final amt ' || final_amount);
+ELSIF plan_name_var = 'Diamond' THEN
+final_amount := (initial_bill - (0.70 * (initial_bill)));
+DBMS_OUTPUT.put_line('final amt ' || final_amount);
+ELSE
+dbms_output.put_line('This plan does not exists!!');
 END IF;
 
 INSERT INTO BILLING (amount, appointment_id) values (final_amount, app_id);
 END;
 /
-
-
-
 
 ---------------------------------- procedure for premium payements ----------------------------------
 create or replace procedure PAYPREMIUM(policy_id_var number) is
