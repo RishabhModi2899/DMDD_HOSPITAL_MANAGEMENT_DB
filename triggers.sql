@@ -58,8 +58,3 @@ BEGIN
 	INSERT INTO BILLING (amount, appointment_id) values (final_amount, app_id);
 END;
 /
-
-INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) 
-values (TO_DATE('2022/04/04', 'yyyy/mm/dd'),1,1,TO_TIMESTAMP('11:00','hh24:mi'));
-
-select * from billing;
