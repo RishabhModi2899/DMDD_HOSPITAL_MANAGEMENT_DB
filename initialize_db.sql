@@ -869,7 +869,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE INSURANCE_POLICY
             )';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_POLICY TABLE CREATED');
     
-    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_POLICY(pol_start_date,pol_end_date,duration_months,patient_copays,premium_payment_option,premium_due_date,plan_id) values (to_date(''04/01/2019'',''mm/dd/yyyy''),to_date(''03/31/2023'',''mm/dd/yyyy''),20,100,''QUART'',to_date(''06/30/2022'',''mm/dd/yyyy''),10)';
+    EXECUTE IMMEDIATE 'INSERT INTO INSURANCE_POLICY(pol_start_date,pol_end_date,duration_days,patient_copays,premium_payment_option,premium_due_date,plan_id) values (to_date(''04/01/2019'',''mm/dd/yyyy''),to_date(''03/31/2023'',''mm/dd/yyyy''),20,100,''QUART'',to_date(''06/30/2022'',''mm/dd/yyyy''),10)';
     DBMS_OUTPUT.PUT_LINE('INSURANCE_POLICY DATA INSERTION COMPLETED');
 END IF;
 
