@@ -196,6 +196,7 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE DEPARTMENTS
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Anesthetics'')';
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Health and Safety'')';
     EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Cardiology'')';
+    EXECUTE IMMEDIATE 'INSERT INTO DEPARTMENTS(dept_name) values (''Psychology'')';
     DBMS_OUTPUT.PUT_LINE('DEPARTMENTS DATA INSERTION COMPLETED');
 END IF;
 
@@ -578,19 +579,6 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/04'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:00'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/02/21'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''11:50'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/01/23'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''08:30'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/02/14'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''09:45'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/12/17'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''11:35'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/01'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''07:55'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/03/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''03:00'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/12/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:30'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/11/29'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''09:40'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/01/15'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''07:10'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/07/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''06:45'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/08/07'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''01:55'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/04/09'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''10:20'',''hh24:mi''))';
-    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/10/23'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''03:26'',''hh24:mi''))';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS DATA INSERTION COMPLETED');
 END IF;
 
@@ -616,6 +604,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE VACCINE
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Hepatitis B'',90)';
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Diphtheria'',15)';
     EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Tetanus'',10)';
+    EXECUTE IMMEDIATE 'Insert into VACCINE (VACCINE_NAME,INOCULATED_BY_DAYS) values (''Inluenza'',10)';
+
 
     DBMS_OUTPUT.PUT_LINE('VACCINE DATA INSERTION COMPLETED');
 END IF;
@@ -742,13 +732,15 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE COVERAGE
     DBMS_OUTPUT.PUT_LINE('COVERAGE TABLE CREATED');
     
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''N'',2400)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''Y'',2700)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''N'',3500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Silver'',''Y'',''N'',2700)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''Y'',3500)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Gold'',''Y'',''Y'',3800)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''N'',5000)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Platinum'',''Y'',''Y'',4800)';
-    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''N'',6500)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',6500)';
     EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',6700)';
+    EXECUTE IMMEDIATE 'INSERT INTO COVERAGE(plan_name,health_inclusive,dental_inclusive,premium) values(''Diamond'',''Y'',''Y'',7700)';
+
 
     DBMS_OUTPUT.PUT_LINE('COVERAGE DATA INSERTION COMPLETED');
 END IF;

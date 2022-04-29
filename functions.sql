@@ -1,3 +1,5 @@
+Set Serveroutput on;
+
 create or replace function payment_info (bn in number)
 return number
 is 
@@ -11,7 +13,7 @@ begin
     return paymnt;
 exception
     when no_data_found then
-        DBMS_OUTPUT.PUT_LINE(' no such bill number found!');
+        DBMS_OUTPUT.PUT_LINE('no such bill number found!');
     when others then
         DBMS_OUTPUT.PUT_LINE('error!! try again!');     
 end;
@@ -31,8 +33,10 @@ begin
     premium := payment_info(b_no);
     If premium >= amt then
         DBMS_OUTPUT.PUT_LINE('Insurance is covered.');
+        DBMS_OUTPUT.PUT_LINE('Balance amount in Insurance : '|| (premium - amt));
     Else
         DBMS_OUTPUT.PUT_LINE('Insurance premium does not cover your bill amount.');
+        DBMS_OUTPUT.PUT_LINE('Balance amount to be paid : '|| (amt - premium));
     End if;
 exception
     when no_data_found then
