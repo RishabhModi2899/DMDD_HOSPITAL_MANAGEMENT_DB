@@ -24,14 +24,15 @@ Advantages
  	•The proposed Hospital Management System has following advantages:
  	•We have enhanced the system to enable every user to access their data anytime and can go paperless
 	•This systems enables seamless billing for patients and insurance claims sent directly to the insurance company,eradicating the hassles of 
-   reimbursement.             
+          reimbursement.             
  	•Its fast, convenient and reliable 
  	•Avoids data redundancy and inconsistency 
  	•Provides more security and integrity 
 
 
 Future enhancements 
-
 	•We can further enhance the system by including more facilities like in patient room management, stock details of medicines in pharmacy.
 
 
+
+	
