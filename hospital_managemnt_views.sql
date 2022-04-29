@@ -1,5 +1,4 @@
 --------------Hospital and hospital department-------------------------------
-DROP VIEW hos_hospitaldept_view;
 
 CREATE VIEW hos_hospitaldept_view AS
 SELECT 
@@ -14,9 +13,8 @@ SELECT * FROM hos_hospitaldept_view;
       
       
 ------------view to create patient documents--------------------------------- 
-DROP VIEW patient_view;
 
-CREATE VIEW patient_view AS
+CREATE OR REPLACE VIEW patient_view AS
 SELECT 
  p.patient_id,                     
  p.first_name,
@@ -32,9 +30,8 @@ SELECT
 SELECT * FROM patient_view;
 
 --------------view to create Patient and vaccine records---------------------
-DROP VIEW patient_vaccine_view;
 
-CREATE VIEW patient_vaccine_view AS
+CREATE OR REPLACE VIEW patient_vaccine_view AS
 SELECT 
  p.patient_id,                     
  p.first_name,
