@@ -341,6 +341,8 @@ ELSE EXECUTE IMMEDIATE 'CREATE TABLE APPOINTMENTS
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/01/23'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''08:30'',''hh24:mi''))';
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/02/14'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''09:45'',''hh24:mi''))';
     EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2021/12/17'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''11:35'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/04/01'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''07:55'',''hh24:mi''))';
+    EXECUTE IMMEDIATE 'INSERT INTO APPOINTMENTS(apmt_date,doc_hospital_id,file_id,start_time) values (TO_DATE(''2022/03/12'', ''yyyy/mm/dd''),1,1,TO_TIMESTAMP(''03:00'',''hh24:mi''))';
     DBMS_OUTPUT.PUT_LINE('APPOINTMENTS DATA INSERTION COMPLETED');
 END IF;
 
