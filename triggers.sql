@@ -40,6 +40,10 @@ ELSIF treatment_var = 'MRI' THEN
 initial_bill := 3000;
 ELSIF treatment_var = 'BLOOD TEST' THEN
 initial_bill := 100;
+ELSIF treatment_var = 'ORTHO' THEN
+initial_bill := 2500;
+ELSIF treatment_var = 'EYE CHECKUP' THEN
+initial_bill := 1200;
 ELSE
 initial_bill := 500;
 END IF;
@@ -61,6 +65,11 @@ dbms_output.put_line('This plan does not exists!!');
 END IF;
 
 INSERT INTO BILLING (amount, appointment_id) values (final_amount, app_id);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_stack);
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_backtrace);
+        DBMS_OUTPUT.put_line('Some error occurred. Please contact db admin');
 END;
 /
 
@@ -72,6 +81,11 @@ insert into receipt(date_of_payment) values(sysdate);
 SELECT receipt_no INTO rec_var FROM receipt ORDER BY receipt_no DESC FETCH FIRST 1 ROWS ONLY;
 DBMS_OUTPUT.PUT_LINE(rec_var);
 INSERT INTO premium_payments(policy_id, receipt_no) values(policy_id_var, rec_var);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_stack);
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_backtrace);
+        DBMS_OUTPUT.put_line('Some error occurred. Please contact db admin');
 end;
 /
 
@@ -87,6 +101,11 @@ DBMS_OUTPUT.PUT_LINE('trigger called');
 SELECT policy_id INTO policy_id_var FROM premium_payments ORDER BY PREMIUM_BILL_NO
 DESC FETCH FIRST 1 ROWS ONLY;
 update insurance_policy set premium_due_date = sysdate where policy_id = policy_id_var;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_stack);
+        DBMS_OUTPUT.put_line(DBMS_UTILITY.format_error_backtrace);
+        DBMS_OUTPUT.put_line('Some error occurred. Please contact db admin');
 end;
 /
 
