@@ -85,6 +85,18 @@ vr.status FROM VACCINE_RECORDS vr JOIN VACCINE v ON vr.vaccine_id=v.vaccine_id J
 
 select * from VACCINE_RECORD_VIEW;
 --------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------doctor and availibility ------------------------------------------------
 
+CREATE OR REPLACE VIEW availibility_doctor_view AS
+SELECT 
+da.avail_id,
+da.day,
+da.start_time, 
+da.end_time,
+d.doctor_id, 
+d.doc_first_name,
+d.doc_last_name
+from DOCTOR d join DOC_AVAILABILITY da ON da.doctor_id=d.doctor_id order by d.doctor_id ;
 
+select * from availibility_doctor_view;
                         
